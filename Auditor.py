@@ -7,7 +7,7 @@ while True:
 
     if stock_q.lower() == "quit":
         break
-    
+
     if not stock_q.isdigit():
         print("Error: Please enter a valid integer.")
         failed += 1
