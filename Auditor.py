@@ -1,4 +1,4 @@
-inventory = 0
+Inventory = 0
 stock_q = 0
 failed = 0
 
@@ -19,4 +19,8 @@ while True:
         failed += 1
         continue
 
-    inventory += stock_q
+    if inventory > 500:
+        print("ALERT: Inventory exceeds 500 units!")
+        break
+
+    Inventory += stock_q
