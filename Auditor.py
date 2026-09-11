@@ -7,3 +7,6 @@ while True:
 
     if stock_q.lower() == "quit":
         break
+
+    stock_q = int(stock_q)
+    inventory += stock_q
