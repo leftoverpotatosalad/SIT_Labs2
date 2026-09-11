@@ -19,12 +19,12 @@ while True:
         failed += 1
         continue
 
-    if inventory > 500:
-        print("ALERT: Inventory exceeds 500 units!")
-        break
-
     Inventory += stock_q
 
     if Inventory > 500:
         print("ALERT: Inventory exceeds 500 units!")
         break
+
+print("\n--- Final Report ---")
+print("Total Units Processed:", Inventory)
+print("Number of Failed/Rejected Entries:", failed)
