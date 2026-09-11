@@ -15,7 +15,8 @@ while True:
 
     stock_q = int(stock_q)
     if stock_q < 0: 
-        print("Error: Please enter a postive number")
+        print("Error: Please enter a Postive number")
         failed += 1
         continue
+
     inventory += stock_q
