@@ -24,3 +24,7 @@ while True:
         break
 
     Inventory += stock_q
+
+    if Inventory > 500:
+        print("ALERT: Inventory exceeds 500 units!")
+        break
