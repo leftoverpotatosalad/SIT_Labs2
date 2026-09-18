@@ -9,12 +9,19 @@ def get_valid_input():
 
     if stock_q < 0:
          print("Please enter a vaild postive integer")
-         Return None
+         return None
 
     return stock_q
 
 
-    
+def process_delivery(current_total, new_value)
+    current_total += new_value
+    if current_total > 500:
+        print("ALERT: Inventory exceeds 500 units!")
+        return current_total, True
+    return current_total, False
+
+
 
 
 
