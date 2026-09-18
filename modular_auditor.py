@@ -23,7 +23,13 @@ def process_delivery(current_total, new_value)
 def caculate_tax(amount):
      tax_rate = 0.10 
      tax_amount = amount * tax_rate
-     return tax_amount     
+     return tax_amount
+
+def generate_report(total_units, failed_entries):
+    print("\n--- Final Report ---")
+    print("Total Units Processed:", total_units)
+    print("Number of Failed/Rejected Entries:", failed_entries)
+
 
     
 
